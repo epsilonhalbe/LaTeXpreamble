@@ -1,0 +1,138 @@
+
+%----------------------------------------------------------------------ENCODING
+\usepackage[english]{babel}
+%-------------------------------------------------------------------------FONTS
+\usepackage[sumlimits,intlimits]{amsmath}
+    \allowdisplaybreaks
+\usepackage{amsfonts,amssymb,bbm,wasysym,mathrsfs}
+\usepackage{mathtools}
+%\mathtoolsset{showonlyrefs}
+% \mathclap, \mathrlap  and \mathllap aligns the summation etc. indices
+\usepackage[only, lightning]{stmaryrd}
+\usepackage[makeroom]{cancel}
+\usepackage[scaled=0.90]{helvet} % ss
+\usepackage{courier} % tt
+\normalfont
+\usepackage[T1]{fontenc}
+
+\usepackage{enumerate}  % makes customizable enumerate-environments
+\usepackage{tocloft}    % table of contents/ list of figures/ list of tables
+\usepackage{lipsum}     % for Blindtext
+\usepackage[textsize=scriptsize, textwidth=20mm, backgroundcolor=white]{todonotes}  
+%-----------------------------------------------Graphics and Color
+\usepackage{graphicx,xcolor}
+\usepackage{tikz,tkz-euclide}
+\usetkzobj{all}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage[nottoc]{tocbibind}
+\usepackage{color}
+
+    \definecolor{grey}{rgb}{0.65,0.65,0.65}
+    \definecolor{lightgrey}{rgb}{0.95,0.95,0.95}
+    \definecolor{lightblue}{rgb}{0.30,0.30,0.55}
+    \definecolor{purple}{rgb}{0.65,0.12,0.82}
+    \definecolor{lightyellow}{rgb}{1.00,0.95,0.75}
+    \definecolor{lightred}{rgb}{1.00,0.35,0.35}
+
+
+%\makeatletter
+%\providecommand{\fertig}{$\blacksquare$}
+
+\usepackage{xy}     % for commutative diagrams
+    %\input xy
+    \xyoption{all}
+
+%------------------------------------------------------------------------AMSTHM
+\usepackage{amsthm}
+% ------------------------------------------ myPlain
+    \newtheoremstyle{plain}% <name>
+    {}% <Space above>
+    {}% <Space below>
+    {\slshape}% <Body font>
+    {3mm}% <Indent amount i 1
+    {\bfseries}% <Theorem head font>
+    {\newline}% <Punctuation after theorem head>
+    {.5em}% <Space after theorem head i 2
+    {\thmnumber{#2 }\thmname{#1:}\thmnote{\ #3}}% Thm head spec
+    \theoremstyle{plain}
+        \newtheorem{thm}{Theorem}[chapter]
+        \newtheorem{cor}[thm]{Corollary}
+        \newtheorem{exx}[thm]{Example}
+        \newtheorem{lem}[thm]{Lemma}
+        \newtheorem{prp}[thm]{Proposition}
+% ------------------------------------------ myDefinition
+    \newtheoremstyle{definition}% <name>
+    {}% <Space above>
+    {}% <Space below>
+    {}% <Body font>
+    {3mm}% <Indent amount i 1
+    {\bfseries}% <Theorem head font>
+    {\newline}% <Punctuation after theorem head>
+    {.5em}% <Space after theorem head i 2
+    {\bfseries\thmnumber{#2 }\thmname{#1:}\thmnote{\ \underline{#3}}}% Thm head spec
+    \theoremstyle{definition}
+        \newtheorem{dfn}[thm]{Definition}
+
+% ------------------------------------------ myRemark
+    \newtheoremstyle{remark}% <name>
+    {}% <Space above>
+    {}% <Space below>
+    {}% <Body font>
+    {3mm}% <Indent amount i 1
+    {\bfseries}% <Theorem head font>
+    {\newline}%<Punctuation after theorem head>
+    {.5em}% <Space after theorem head i 2
+    {\thmnumber{#2 }\thmname{#1}\thmnote{\ -- #3}}% Thm head spec
+    \theoremstyle{remark}
+        \newtheorem{rmk}[thm]{Remark}
+
+%----------------------------------------------------------------Highlight Code
+\usepackage{verbatim}
+
+\usepackage{listings}
+    \lstloadlanguages{Haskell}
+    \lstnewenvironment{code}
+        {\lstset{language=Haskell}
+        \lstset{backgroundcolor=\color{lightgrey}}
+        \lstset{keywordstyle=\color{lightblue}\bfseries\emph}
+        \lstset{commentstyle=\color{grey}\itshape}
+        \lstset{stringstyle=\color{purple}\emph}
+        \lstset{frame=tb}
+          \csname lst@SetFirstLabel\endcsname}
+        {\csname lst@SaveFirstLabel\endcsname}
+        \lstset{
+          basicstyle=\small\sffamily,
+          flexiblecolumns=false,
+          basewidth={0.5em,0.45em},
+          literate={+}{{$+$}}1 {/}{{$/$}}1 {*}{{$*$}}1 {=}{{$=$}}1
+                   {>}{{$>$}}1 {<}{{$<$}}1 {\\}{{$\lambda$}}1
+                   {\\\\}{{\char`\\\char`\\}}1
+                   {->}{{$\rightarrow$}}2 {>=}{{$\geq$}}2 {<-}{{$\leftarrow$}}2
+                   {<=}{{$\leq$}}2 {=>}{{$\Rightarrow$}}2
+                   {\ .}{{$\circ$}}2 {\ .\ }{{$\circ$}}2
+                   {>>}{{>>}}2 {>>=}{{>>=}}2
+                   {|}{{$\mid$}}1
+        }
+%----------------------------------------------------------------------LuaLaTeX
+%\usepackage{luatextra}
+%\usepackage{fontspec} % don't forget with LuaTeX and has to be AFTER amsthm
+
+%-------------------------------------------------------The Numbering of Things
+    \renewcommand{\thechapter}{\Roman{chapter}}
+    \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+    \renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+    \renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+
+%------------------------------------------------------------------killcontents
+%\usepackage{environ} % just removes the proofs
+%\NewEnviron{killcontents}{}{}
+%\let\proof\killcontents
+%\let\endproof\endkillcontents
+%\usepackage{showkeys} % draws labelnames with the foo labeled f***s up amstm
+%\renewcommand*\showkeyslabelformat[1]{\hspace*{-4cm}\normalfont\scriptsize\sffamily(#1)} 
+%---------------------------------------------------------------------------nag
+%\usepackage[l2tabu]{nag}
+%\RequirePackage[l2tabu,orthodox]{nag} % gives warnings and destroys all fun
+

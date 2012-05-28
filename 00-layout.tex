@@ -1,0 +1,50 @@
+% see KOMA script guide, font size, BCOR is the "Bundsteg" in the middle,
+% two sided layout, DIV15 sets the borders
+\documentclass[a4paper
+              ,twoside
+              ,10pt
+              ,toc=flat
+              ,BCOR18mm
+              ,DIV15
+%footsepline, % <- disabled
+% and quite important, the header is included in the layout rules, the footer not!
+              ,headsepline
+              ,headinclude
+              ,footinclude=false
+              ,cleardoublepage=plain
+              ,notitlepage
+%              ,draft
+              ,version=first]{scrbook}
+
+%\documentclass[a4paper]{scrrprt}         ,headsepline
+
+%eineinhalbzeilig, aber Achtung, nicht Titel und TOC!
+\usepackage{setspace}
+\onehalfspacing
+\raggedbottom % don't stretch paragraphs vertically
+
+\usepackage{multicol}
+%\usepackage[paperwidth=250mm]{geometry}
+% use below for kindle output
+%\usepackage[paper size={120mm, 83mm},left=2mm,right=2mm,top=2mm,bottom=2mm,nohead]{geometry}
+%\usepackage{fancyhdr}
+%    \pagestyle{fancy}
+%    \hoffset    =   5pt
+%    \headheight =  28pt
+%    \headsep    =  20pt
+%    \footskip   =  40pt
+%    \textheight = 650pt
+%    \fancyfoot{\empty}
+%    \fancyfoot[L]{\today}
+%    \fancyfoot[R]{\thepage}
+%    \fancyhead{\empty}
+%    \rhead{\hfill {\bfseries \leftmark}\newline\rightmark}
+%
+%    \renewcommand{\chaptermark}[1]{%
+%        \markboth{\MakeUppercase{%
+%        \thechapter%
+%        \ #1}}{\MakeUppercase{%
+%        \thechapter.%
+%        \ #1}}}
+%
+

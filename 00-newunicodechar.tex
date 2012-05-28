@@ -1,0 +1,507 @@
+\usepackage{newunicodechar}
+
+%\newunicodechar{ü}{\"{u}}
+%\newunicodechar{ö}{\"{o}}
+%\newunicodechar{ä}{\"{a}}
+%\newunicodechar{ß}{\"{s}}
+%\newunicodechar{Ü}{\"{U}}
+%\newunicodechar{Ö}{\"{O}}
+%\newunicodechar{Ä}{\"{A}}
+%\newunicodechar{ẞ}{\"{S}}
+
+%superscript letters
+\newunicodechar{⁰}{^0}
+\newunicodechar{¹}{{}^1}
+\newunicodechar{²}{^2}
+\newunicodechar{³}{^3}
+\newunicodechar{⁴}{^4}
+\newunicodechar{⁵}{^5}
+\newunicodechar{⁶}{^6}
+\newunicodechar{⁷}{^7}
+\newunicodechar{⁸}{^8}
+\newunicodechar{⁹}{^9}
+\newunicodechar{ᵃ}{^a}
+\newunicodechar{ᵇ}{^b}
+\newunicodechar{ᶜ}{^c}
+\newunicodechar{ᵈ}{^d}
+\newunicodechar{ᵉ}{^e}
+\newunicodechar{ᶠ}{^f}
+\newunicodechar{ᵍ}{^g}
+\newunicodechar{ʰ}{^h}
+\newunicodechar{ⁱ}{^i}
+\newunicodechar{ʲ}{^j}
+\newunicodechar{ᵏ}{^k}
+\newunicodechar{ˡ}{^l}
+\newunicodechar{ᵐ}{^m}
+\newunicodechar{ⁿ}{^n}
+\newunicodechar{ᵒ}{^o}
+\newunicodechar{ᵖ}{^p}
+% no q in unicode
+\newunicodechar{ʳ}{^r}
+\newunicodechar{ˢ}{^s}
+\newunicodechar{ᵗ}{^t}
+\newunicodechar{ᵘ}{^u}
+\newunicodechar{ᵛ}{^v}
+\newunicodechar{ʷ}{^w}
+\newunicodechar{ˣ}{^x}
+\newunicodechar{ʸ}{^y}
+\newunicodechar{ᶻ}{^z}
+\newunicodechar{⁻}{{}^-}
+\newunicodechar{⁺}{{}^+}
+\newunicodechar{⁽}{{}^(}
+\newunicodechar{⁾}{{}^)}
+
+
+% subscript letters
+\newunicodechar{ₐ}{_a}
+\newunicodechar{ₑ}{_e}
+\newunicodechar{ₕ}{_h}
+\newunicodechar{ᵢ}{_i}
+\newunicodechar{ⱼ}{_j}
+\newunicodechar{ₖ}{_k}
+\newunicodechar{ₗ}{_l}
+\newunicodechar{ₘ}{_m}
+\newunicodechar{ₙ}{_n}
+\newunicodechar{ₒ}{_o}
+\newunicodechar{ₚ}{_p}
+\newunicodechar{ᵣ}{_r}
+\newunicodechar{ₛ}{_s}
+\newunicodechar{ₜ}{_t}
+\newunicodechar{ᵤ}{_u}
+\newunicodechar{ᵥ}{_v}
+\newunicodechar{ₓ}{_x}
+
+\newunicodechar{₀}{_0}
+\newunicodechar{₁}{_1}
+\newunicodechar{₂}{_2}
+\newunicodechar{₃}{_3}
+\newunicodechar{₄}{_4}
+\newunicodechar{₅}{_5}
+\newunicodechar{₆}{_6}
+\newunicodechar{₇}{_7}
+\newunicodechar{₈}{_8}
+\newunicodechar{₉}{_9}
+\newunicodechar{₍}{{}_(}
+\newunicodechar{₎}{{}_)}
+\newunicodechar{₋}{{}_-}
+\newunicodechar{₊}{{}_+}
+
+% mathbb letters
+\newunicodechar{𝔸}{\ensuremath{\mathbb A}}
+\newunicodechar{𝔹}{\ensuremath{\mathbb B}}
+\newunicodechar{ℂ}{\ensuremath{\mathbb C}}
+\newunicodechar{𝔻}{\ensuremath{\mathbb D}}
+\newunicodechar{𝔼}{\ensuremath{\mathbb E}}
+\newunicodechar{𝔽}{\ensuremath{\mathbb F}}
+\newunicodechar{𝔾}{\ensuremath{\mathbb G}}
+\newunicodechar{ℍ}{\ensuremath{\mathbb H}}
+\newunicodechar{𝕀}{\ensuremath{\mathbb I}}
+\newunicodechar{𝕁}{\ensuremath{\mathbb J}}
+\newunicodechar{𝕂}{\ensuremath{\mathbb K}}
+\newunicodechar{𝕃}{\ensuremath{\mathbb L}}
+\newunicodechar{𝕄}{\ensuremath{\mathbb M}}
+\newunicodechar{ℕ}{\ensuremath{\mathbb N}}
+\newunicodechar{𝕆}{\ensuremath{\mathbb O}}
+\newunicodechar{ℙ}{\ensuremath{\mathbb P}}
+\newunicodechar{ℚ}{\ensuremath{\mathbb Q}}
+\newunicodechar{ℝ}{\ensuremath{\mathbb R}}
+\newunicodechar{𝕊}{\ensuremath{\mathbb S}}
+\newunicodechar{𝕋}{\ensuremath{\mathbb T}}
+\newunicodechar{𝕌}{\ensuremath{\mathbb U}}
+\newunicodechar{𝕍}{\ensuremath{\mathbb V}}
+\newunicodechar{𝕎}{\ensuremath{\mathbb W}}
+\newunicodechar{𝕏}{\ensuremath{\mathbb X}}
+\newunicodechar{𝕐}{\ensuremath{\mathbb Y}}
+\newunicodechar{ℤ}{\ensuremath{\mathbb Z}}
+
+% mathbf letters
+\newunicodechar{𝗕}{\ensuremath{\mathbf B}}
+\newunicodechar{𝗗}{\ensuremath{\mathbf D}}
+\newunicodechar{𝐅}{\ensuremath{\mathbf F}}
+
+% mathcal letters
+\newunicodechar{𝓐}{\ensuremath{\mathcal A}}
+\newunicodechar{𝓑}{\ensuremath{\mathcal B}}
+\newunicodechar{𝓒}{\ensuremath{\mathcal C}}
+\newunicodechar{𝓓}{\ensuremath{\mathcal D}}
+\newunicodechar{𝓔}{\ensuremath{\mathcal E}}
+\newunicodechar{𝓕}{\ensuremath{\mathcal F}}
+\newunicodechar{𝓖}{\ensuremath{\mathcal G}}
+\newunicodechar{𝓗}{\ensuremath{\mathcal H}}
+\newunicodechar{𝓘}{\ensuremath{\mathcal I}}
+\newunicodechar{𝓙}{\ensuremath{\mathcal J}}
+\newunicodechar{𝓚}{\ensuremath{\mathcal K}}
+\newunicodechar{𝓛}{\ensuremath{\mathcal L}}
+\newunicodechar{𝓜}{\ensuremath{\mathcal M}}
+\newunicodechar{𝓝}{\ensuremath{\mathcal N}}
+\newunicodechar{𝓞}{\ensuremath{\mathcal O}}
+\newunicodechar{𝓟}{\ensuremath{\mathcal P}}
+\newunicodechar{𝓠}{\ensuremath{\mathcal Q}}
+\newunicodechar{𝓡}{\ensuremath{\mathcal R}}
+\newunicodechar{𝓢}{\ensuremath{\mathcal S}}
+\newunicodechar{𝓣}{\ensuremath{\mathcal T}}
+\newunicodechar{𝓤}{\ensuremath{\mathcal U}}
+\newunicodechar{𝓥}{\ensuremath{\mathcal V}}
+\newunicodechar{𝓦}{\ensuremath{\mathcal W}}
+\newunicodechar{𝓧}{\ensuremath{\mathcal X}}
+\newunicodechar{𝓨}{\ensuremath{\mathcal Y}}
+\newunicodechar{𝓩}{\ensuremath{\mathcal Z}}
+
+% mathrm font
+\newunicodechar{𝗱}{\ensuremath{\dd}}
+
+% mathfrak letters
+\newunicodechar{𝖃}{\ensuremath{\mathfrak X}}
+\newunicodechar{𝕾}{\ensuremath{\mathfrak S}}
+
+\newunicodechar{⍙}{\ensuremath{\underline{\Delta}}}
+
+\newunicodechar{∥}{\ensuremath{\|}}
+\newunicodechar{˜}{\ensuremath{\tilde}}
+\newunicodechar{ˇ}{\ensuremath{\check}}
+\newunicodechar{¯}{\ensuremath{\bar}}
+\newunicodechar{‾}{\ensuremath{\ol}}
+\newunicodechar{⟨}{\ensuremath{\langle}}
+\newunicodechar{⟩}{\ensuremath{\rangle}}
+\newunicodechar{❴}{\ensuremath{\{}}
+\newunicodechar{❵}{\ensuremath{\}}}
+
+\newunicodechar{•}{\ensuremath{\bullet}}
+
+\newunicodechar{Ⅱ}{\ensuremath{\II}}
+\newunicodechar{➗}{\over}
+
+% greek lower case letters
+\newunicodechar{α}{\ensuremath{\alpha}}
+\newunicodechar{β}{\ensuremath{\beta}}
+\newunicodechar{γ}{\ensuremath{\gamma}}
+\newunicodechar{δ}{\ensuremath{\delta}}
+\newunicodechar{ϵ}{\ensuremath{\epsilon}}
+\newunicodechar{ε}{\ensuremath{\eps}}
+\newunicodechar{ζ}{\ensuremath{\zeta}}
+\newunicodechar{η}{\ensuremath{\eta}}
+\newunicodechar{θ}{\ensuremath{\theta}}
+\newunicodechar{ϑ}{\ensuremath{\vartheta}}
+\newunicodechar{ι}{\ensuremath{\iota}}
+\newunicodechar{κ}{\ensuremath{\kappa}}
+\newunicodechar{𝓚}{\ensuremath{\Kappa}}
+\newunicodechar{λ}{\ensuremath{\lambda}}
+\newunicodechar{μ}{\ensuremath{\mu}}
+\newunicodechar{ν}{\ensuremath{\nu}}
+\newunicodechar{ξ}{\ensuremath{\xi}}
+\newunicodechar{π}{\ensuremath{\pi}}
+\newunicodechar{ϖ}{\ensuremath{\varpi}}
+\newunicodechar{ρ}{\ensuremath{\rho}}
+\newunicodechar{ϱ}{\ensuremath{\varrho}}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{ς}{\ensuremath{\varsigma}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{υ}{\ensuremath{\upsilon}}
+\newunicodechar{φ}{\ensuremath{\varphi}}
+\newunicodechar{ϕ}{\ensuremath{\phi}}
+\newunicodechar{χ}{\ensuremath{\chi}}
+\newunicodechar{ψ}{\ensuremath{\psi}}
+\newunicodechar{ω}{\ensuremath{\omega}}
+
+% greek capital letters
+\newunicodechar{Γ}{\ensuremath{\Gamma}}
+\newunicodechar{Δ}{\ensuremath{\Delta}}
+\newunicodechar{Θ}{\ensuremath{\Theta}}
+\newunicodechar{Λ}{\ensuremath{\Lambda}}
+\newunicodechar{Ξ}{\ensuremath{\Xi}}
+\newunicodechar{Π}{\ensuremath{\Pi}}
+\newunicodechar{Υ}{\ensuremath{\Upsilon}}
+\newunicodechar{Φ}{\ensuremath{\Phi}}
+\newunicodechar{Ψ}{\ensuremath{\Psi}}
+\newunicodechar{Ω}{\ensuoremath{\Omega}}
+
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≪}{\ensuremath{\ll}}
+\newunicodechar{≺}{\ensuremath{\prec}}
+\newunicodechar{≼}{\ensuremath{\preceq}}
+\newunicodechar{⊂}{\ensuremath{\subset}}
+\newunicodechar{⊆}{\ensuremath{\subseteq}}
+\newunicodechar{⊏}{\ensuremath{\sqsubset}}
+\newunicodechar{⊑}{\ensuremath{\sqsubseteq}}
+\newunicodechar{∊}{\ensuremath{\in}}
+\newunicodechar{⊢}{\ensuremath{\vdash}}
+\newunicodechar{∣}{\ensuremath{\mid}}
+\newunicodechar{⌣}{\ensuremath{\smile}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≫}{\ensuremath{\gg}}
+\newunicodechar{≻}{\ensuremath{\succ}}
+\newunicodechar{≽}{\ensuremath{\succeq}}
+\newunicodechar{⊃}{\ensuremath{\supset}}
+\newunicodechar{⊇}{\ensuremath{\supseteq}}
+\newunicodechar{⊐}{\ensuremath{\sqsupset}}
+\newunicodechar{⊒}{\ensuremath{\sqsupseteq}}
+\newunicodechar{∋}{\ensuremath{\ni}}
+\newunicodechar{⊣}{\ensuremath{\dashv}}
+\newunicodechar{⌢}{\ensuremath{\frown}}
+\newunicodechar{∉}{\ensuremath{\notin}}
+\newunicodechar{≡}{\ensuremath{\equiv}}
+\newunicodechar{≐}{\ensuremath{\doteq}}
+\newunicodechar{∼}{\ensuremath{\sim}}
+\newunicodechar{≃}{\ensuremath{\simeq}}
+\newunicodechar{≈}{\ensuremath{\approx}}
+\newunicodechar{≅}{\ensuremath{\cong}}
+\newunicodechar{⋈}{\ensuremath{\Join}}
+\newunicodechar{⋈}{\ensuremath{\bowtie}}
+\newunicodechar{∝}{\ensuremath{\propto}}
+\newunicodechar{⊨}{\ensuremath{\models}}
+\newunicodechar{⊥}{\ensuremath{\perp}}
+\newunicodechar{≍}{\ensuremath{\asymp}}
+\newunicodechar{≠}{\ensuremath{\neq}}
+\newunicodechar{±}{\ensuremath{\pm}}
+\newunicodechar{·}{\ensuremath{\cdot}}
+\newunicodechar{×}{\ensuremath{\times}}
+\newunicodechar{∪}{\ensuremath{\cup}}
+\newunicodechar{⊔}{\ensuremath{\sqcup}}
+\newunicodechar{∨}{\ensuremath{\vee}}
+\newunicodechar{⊕}{\ensuremath{\oplus}}
+\newunicodechar{⊙}{\ensuremath{\odot}}
+\newunicodechar{⊗}{\ensuremath{\otimes}}
+\newunicodechar{◬}{\ensuremath{\bigtriangleup}}
+\newunicodechar{⊲}{\ensuremath{\lhd}}
+\newunicodechar{⊴}{\ensuremath{\unlhd}}
+\newunicodechar{∓}{\ensuremath{\mp}}
+\newunicodechar{÷}{\ensuremath{\div}}
+\newunicodechar{∖}{\ensuremath{\setminus}}
+\newunicodechar{∩}{\ensuremath{\cap}}
+\newunicodechar{⊓}{\ensuremath{\sqcap}}
+\newunicodechar{∧}{\ensuremath{\wedge}}
+\newunicodechar{⊖}{\ensuremath{\ominus}}
+\newunicodechar{⊘}{\ensuremath{\oslash}}
+\newunicodechar{○}{\ensuremath{\bigcirc}}
+\newunicodechar{▽}{\ensuremath{\bigtriangledown}}
+\newunicodechar{⊳}{\ensuremath{\rhd}}
+\newunicodechar{⊵}{\ensuremath{\unrhd}}
+\newunicodechar{◁}{\ensuremath{\triangleleft}}
+\newunicodechar{▷}{\ensuremath{\triangleright}}
+\newunicodechar{⋆}{\ensuremath{\star}}
+\newunicodechar{∗}{\ensuremath{\ast}}
+\newunicodechar{∘}{\ensuremath{\circ}}
+\newunicodechar{⋄}{\ensuremath{\diamond}}
+\newunicodechar{⊎}{\ensuremath{\uplus}}
+\newunicodechar{†}{\ensuremath{\dagger}}
+\newunicodechar{‡}{\ensuremath{\ddagger}}
+\newunicodechar{≀}{\ensuremath{\wr}}
+\newunicodechar{∑}{\ensuremath{\sum}}
+\newunicodechar{∏}{\ensuremath{\prod}}
+\newunicodechar{∐}{\ensuremath{\coprod}}
+\newunicodechar{∫}{\ensuremath{\int}}
+\newunicodechar{⋃}{\ensuremath{\bigcup}}
+\newunicodechar{⋂}{\ensuremath{\bigcap}}
+\newunicodechar{⊔}{\ensuremath{\bigsqcup}}
+\newunicodechar{∮}{\ensuremath{\oint}}
+\newunicodechar{⋁}{\ensuremath{\bigvee}}
+\newunicodechar{⋀}{\ensuremath{\bigwedge}}
+\newunicodechar{⨁}{\ensuremath{\bigoplus}}
+\newunicodechar{⨂}{\ensuremath{\bigotimes}}
+\newunicodechar{⨀}{\ensuremath{\bigodot}}
+\newunicodechar{⊎}{\ensuremath{\biguplus}}
+\newunicodechar{←}{\ensuremath{\leftarrow}}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{↔}{\ensuremath{\leftrightarrow}}
+\newunicodechar{⇐}{\ensuremath{\Leftarrow}}
+\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+\newunicodechar{⇔}{\ensuremath{\Leftrightarrow}}
+\newunicodechar{↦}{\ensuremath{\mapsto}}
+\newunicodechar{↩}{\ensuremath{\hookleftarrow}}
+\newunicodechar{↼}{\ensuremath{\leftharpoonup}}
+\newunicodechar{↽}{\ensuremath{\leftharpoondown}}
+\newunicodechar{↪}{\ensuremath{\hookrightarrow}}
+\newunicodechar{⇀}{\ensuremath{\rightharpoonup}}
+\newunicodechar{⇁}{\ensuremath{\rightharpoondown}}
+\newunicodechar{←}{\ensuremath{\longleftarrow}}
+\newunicodechar{⟶}{\ensuremath{\longrightarrow}}
+\newunicodechar{↔}{\ensuremath{\longleftrightarrow}}
+\newunicodechar{⇐}{\ensuremath{\Longleftarrow}}
+\newunicodechar{⇒}{\ensuremath{\Longrightarrow}}
+\newunicodechar{⟺}{\ensuremath{\Longleftrightarrow}}
+\newunicodechar{⟼}{\ensuremath{\longmapsto}}
+\newunicodechar{↑}{\ensuremath{\uparrow}}
+\newunicodechar{↓}{\ensuremath{\downarrow}}
+\newunicodechar{↕}{\ensuremath{\updownarrow}}
+\newunicodechar{⇑}{\ensuremath{\Uparrow}}
+\newunicodechar{⇓}{\ensuremath{\Downarrow}}
+\newunicodechar{⇕}{\ensuremath{\Updownarrow}}
+\newunicodechar{↗}{\ensuremath{\nearrow}}
+\newunicodechar{↘}{\ensuremath{\searrow}}
+\newunicodechar{↙}{\ensuremath{\swarrow}}
+\newunicodechar{↖}{\ensuremath{\nwarrow}}
+\newunicodechar{↝}{\ensuremath{\leadsto}}
+\newunicodechar{…}{\dots}
+\newunicodechar{⋯}{\ensuremath{\cdots}}
+\newunicodechar{⋮}{\ensuremath{\vdots}}
+\newunicodechar{⋱}{\ensuremath{\ddots}}
+\newunicodechar{ℏ}{\ensuremath{\hbar}}
+\newunicodechar{ℓ}{\ensuremath{\ell}}
+\newunicodechar{ℜ}{\ensuremath{\Re}}
+\newunicodechar{ℑ}{\ensuremath{\Im}}
+\newunicodechar{א}{\ensuremath{\aleph}}
+\newunicodechar{℘}{\ensuremath{\wp}}
+\newunicodechar{∀}{\ensuremath{\forall}}
+\newunicodechar{∃}{\ensuremath{\exists}}
+\newunicodechar{℧}{\ensuremath{\mho}}
+\newunicodechar{∂}{\ensuremath{\partial}}
+\newunicodechar{′}{\ensuremath{\prime}}
+\newunicodechar{∅}{\ensuremath{\emptyset}}
+\newunicodechar{∞}{\ensuremath{\infty}}
+\newunicodechar{∇}{\ensuremath{\nabla}}
+\newunicodechar{△}{\ensuremath{\triangle}}
+\newunicodechar{□}{\ensuremath{\Box}}
+\newunicodechar{◇}{\ensuremath{\Diamond}}
+\newunicodechar{⊥}{\ensuremath{\bot}}
+\newunicodechar{⊤}{\ensuremath{\top}}
+\newunicodechar{∠}{\ensuremath{\angle}}
+\newunicodechar{√}{\ensuremath{\surd}}
+\newunicodechar{√}{\ensuremath{\sqrt}}
+\newunicodechar{♢}{\ensuremath{\diamondsuit}}
+\newunicodechar{♡}{\ensuremath{\heartsuit}}
+\newunicodechar{♣}{\ensuremath{\clubsuit}}
+\newunicodechar{♠}{\ensuremath{\spadesuit}}
+\newunicodechar{¬}{\ensuremath{\neg}}
+\newunicodechar{♭}{\ensuremath{\flat}}
+\newunicodechar{♮}{\ensuremath{\natural}}
+\newunicodechar{♯}{\ensuremath{\sharp}}
+\newunicodechar{Ϝ}{\ensuremath{\digamma}}
+\newunicodechar{ϰ}{\ensuremath{\varkappa}}
+\newunicodechar{ב}{\ensuremath{\beth}}
+\newunicodechar{ד}{\ensuremath{\daleth}}
+\newunicodechar{ג}{\ensuremath{\gimel}}
+\newunicodechar{⋖}{\ensuremath{\lessdot}}
+\newunicodechar{⩽}{\ensuremath{\leqslant}}
+\newunicodechar{≦}{\ensuremath{\leqq}}
+\newunicodechar{⋘}{\ensuremath{\lll}}
+\newunicodechar{≲}{\ensuremath{\lesssim}}
+\newunicodechar{≶}{\ensuremath{\lessgtr}}
+\newunicodechar{⋚}{\ensuremath{\lesseqgtr}}
+\newunicodechar{≼}{\ensuremath{\preccurlyeq}}
+\newunicodechar{⋞}{\ensuremath{\curlyeqprec}}
+\newunicodechar{≾}{\ensuremath{\precsim}}
+\newunicodechar{⋐}{\ensuremath{\Subset}}
+\newunicodechar{⊏}{\ensuremath{\sqsubset}}
+\newunicodechar{∴}{\ensuremath{\therefore}}
+\newunicodechar{⌣}{\ensuremath{\smallsmile}}
+\newunicodechar{⊲}{\ensuremath{\vartriangleleft}}
+\newunicodechar{⊴}{\ensuremath{\trianglelefteq}}
+\newunicodechar{⋗}{\ensuremath{\gtrdot}}
+\newunicodechar{⩾}{\ensuremath{\geqslant}}
+\newunicodechar{≧}{\ensuremath{\geqq}}
+\newunicodechar{⋙}{\ensuremath{\ggg}}
+\newunicodechar{≳}{\ensuremath{\gtrsim}}
+\newunicodechar{≷}{\ensuremath{\gtrless}}
+\newunicodechar{⋛}{\ensuremath{\gtreqless}}
+\newunicodechar{≽}{\ensuremath{\succcurlyeq}}
+\newunicodechar{⋟}{\ensuremath{\curlyeqsucc}}
+\newunicodechar{≿}{\ensuremath{\succsim}}
+\newunicodechar{⋑}{\ensuremath{\Supset}}
+\newunicodechar{⊐}{\ensuremath{\sqsupset}}
+\newunicodechar{∵}{\ensuremath{\because}}
+%\newunicodechar{∥}{\ensuremath{\shortparallel}}
+\newunicodechar{⌢}{\ensuremath{\smallfrown}}
+\newunicodechar{⊳}{\ensuremath{\vartriangleright}}
+\newunicodechar{⊵}{\ensuremath{\trianglerighteq}}
+\newunicodechar{≑}{\ensuremath{\doteqdot}}
+\newunicodechar{≓}{\ensuremath{\risingdotseq}}
+\newunicodechar{≒}{\ensuremath{\fallingdotseq}}
+\newunicodechar{≖}{\ensuremath{\eqcirc}}
+\newunicodechar{≗}{\ensuremath{\circeq}}
+\newunicodechar{≜}{\ensuremath{\triangleq}}
+\newunicodechar{≏}{\ensuremath{\bumpeq}}
+\newunicodechar{≎}{\ensuremath{\Bumpeq}}
+\newunicodechar{∼}{\ensuremath{\thicksim}}
+\newunicodechar{≈}{\ensuremath{\thickapprox}}
+\newunicodechar{≊}{\ensuremath{\approxeq}}
+\newunicodechar{∽}{\ensuremath{\backsim}}
+\newunicodechar{⊨}{\ensuremath{\vDash}}
+\newunicodechar{⊩}{\ensuremath{\Vdash}}
+\newunicodechar{⊪}{\ensuremath{\Vvdash}}
+\newunicodechar{∍}{\ensuremath{\backepsilon}}
+\newunicodechar{∝}{\ensuremath{\varpropto}}
+\newunicodechar{≬}{\ensuremath{\between}}
+\newunicodechar{⋔}{\ensuremath{\pitchfork}}
+\newunicodechar{◀}{\ensuremath{\blacktriangleleft}}
+\newunicodechar{▷}{\ensuremath{\blacktriangleright}}
+\newunicodechar{⇠}{\ensuremath{\dashleftarrow}}
+\newunicodechar{⇇}{\ensuremath{\leftleftarrows}}
+\newunicodechar{⇆}{\ensuremath{\leftrightarrows}}
+\newunicodechar{⇚}{\ensuremath{\Lleftarrow}}
+\newunicodechar{↞}{\ensuremath{\twoheadleftarrow}}
+\newunicodechar{↢}{\ensuremath{\leftarrowtail}}
+\newunicodechar{⇋}{\ensuremath{\leftrightharpoons}}
+\newunicodechar{↰}{\ensuremath{\Lsh}}
+\newunicodechar{↫}{\ensuremath{\looparrowleft}}
+\newunicodechar{↶}{\ensuremath{\curvearrowleft}}
+\newunicodechar{↺}{\ensuremath{\circlearrowleft}}
+\newunicodechar{⇢}{\ensuremath{\dashrightarrow}}
+\newunicodechar{⇉}{\ensuremath{\rightrightarrows}}
+\newunicodechar{⇄}{\ensuremath{\rightleftarrows}}
+\newunicodechar{⇛}{\ensuremath{\Rrightarrow}}
+\newunicodechar{↠}{\ensuremath{\twoheadrightarrow}}
+\newunicodechar{↣}{\ensuremath{\rightarrowtail}}
+\newunicodechar{⇌}{\ensuremath{\rightleftharpoons}}
+\newunicodechar{↱}{\ensuremath{\Rsh}}
+\newunicodechar{↬}{\ensuremath{\looparrowright}}
+\newunicodechar{↷}{\ensuremath{\curvearrowright}}
+\newunicodechar{↻}{\ensuremath{\circlearrowright}}
+\newunicodechar{⊸}{\ensuremath{\multimap}}
+\newunicodechar{⇈}{\ensuremath{\upuparrows}}
+\newunicodechar{⇊}{\ensuremath{\downdownarrows}}
+\newunicodechar{↿}{\ensuremath{\upharpoonleft}}
+\newunicodechar{↾}{\ensuremath{\upharpoonright}}
+\newunicodechar{⇃}{\ensuremath{\downharpoonleft}}
+\newunicodechar{⇂}{\ensuremath{\downharpoonright}}
+\newunicodechar{⇝}{\ensuremath{\rightsquigarrow}}
+\newunicodechar{↭}{\ensuremath{\leftrightsquigarrow}}
+\newunicodechar{∔}{\ensuremath{\dotplus}}
+\newunicodechar{⋉}{\ensuremath{\ltimes}}
+\newunicodechar{⋓}{\ensuremath{\Cup}}
+\newunicodechar{⊻}{\ensuremath{\veebar}}
+\newunicodechar{⊞}{\ensuremath{\boxplus}}
+\newunicodechar{⊠}{\ensuremath{\boxtimes}}
+\newunicodechar{⋋}{\ensuremath{\leftthreetimes}}
+\newunicodechar{⋎}{\ensuremath{\curlyvee}}
+\newunicodechar{⋅}{\ensuremath{\centerdot}}
+\newunicodechar{⋈}{\ensuremath{\rtimes}}
+\newunicodechar{⋒}{\ensuremath{\Cap}}
+\newunicodechar{⊼}{\ensuremath{\barwedge}}
+\newunicodechar{⊟}{\ensuremath{\boxminus}}
+\newunicodechar{⊡}{\ensuremath{\boxdot}}
+\newunicodechar{⋌}{\ensuremath{\rightthreetimes}}
+\newunicodechar{⋏}{\ensuremath{\curlywedge}}
+\newunicodechar{⊺}{\ensuremath{\intercal}}
+\newunicodechar{⋇}{\ensuremath{\divideontimes}}
+%\newunicodechar{∖}{\ensuremath{\smallsetminus}}
+\newunicodechar{⊝}{\ensuremath{\circleddash}}
+\newunicodechar{⊚}{\ensuremath{\circledcirc}}
+\newunicodechar{⊛}{\ensuremath{\circledast}}
+\newunicodechar{ℏ}{\ensuremath{\hbar}}
+\newunicodechar{ℏ}{\ensuremath{\hslash}}
+\newunicodechar{□}{\ensuremath{\square}}
+\newunicodechar{■}{\ensuremath{\blacksquare}}
+\newunicodechar{Ⓢ}{\ensuremath{\circledS}}
+\newunicodechar{△}{\ensuremath{\vartriangle}}
+\newunicodechar{▲}{\ensuremath{\blacktriangle}}
+\newunicodechar{∁}{\ensuremath{\complement}}
+\newunicodechar{▽}{\ensuremath{\triangledown}}
+\newunicodechar{▼}{\ensuremath{\blacktriangledown}}
+\newunicodechar{◊}{\ensuremath{\lozenge}}
+\newunicodechar{◆}{\ensuremath{\blacklozenge}}
+\newunicodechar{★}{\ensuremath{\bigstar}}
+\newunicodechar{∠}{\ensuremath{\angle}}
+\newunicodechar{∡}{\ensuremath{\measuredangle}}
+\newunicodechar{∢}{\ensuremath{\sphericalangle}}
+\newunicodechar{‵}{\ensuremath{\backprime}}
+\newunicodechar{∄}{\ensuremath{\nexists}}
+\newunicodechar{Ⅎ}{\ensuremath{\Finv}}
+%\newunicodechar{∅}{\ensuremath{\varnothing}}
+\newunicodechar{ð}{\ensuremath{\eth}}
+\newunicodechar{℧}{\ensuremath{\mho}}
+
+% - non mathematical letters but with accent
+\newunicodechar{Č}{\v{C}}
+
+
+

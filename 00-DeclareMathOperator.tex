@@ -1,0 +1,39 @@
+\newcommand{\ReDeclareMathOperator}[1]{%
+ \expandafter\let \csname #1\endcsname \undefined
+ \DeclareMathOperator{\csname #1\endcsname}%
+ }
+%begin DeclareMathOperator
+    \DeclareMathOperator{\TT}{T}
+    \DeclareMathOperator{\Ric}{Ric}
+    \DeclareMathOperator{\dist}{d}
+    \DeclareMathOperator{\id}{id}
+    \DeclareMathOperator{\md}{md}
+    \DeclareMathOperator{\bd}{Bd}
+    \DeclareMathOperator{\sn}{sn}
+    \DeclareMathOperator{\cs}{cs}
+    \DeclareMathOperator{\tn}{tn}
+    \DeclareMathOperator{\const}{const} % constant function
+    \DeclareMathOperator{\vol}{vol}
+    \DeclareMathOperator{\pck}{pck}
+    \DeclareMathOperator{\cov}{cov}
+    \DeclareMathOperator{\ric}{ric} %sec already exists \;-)
+    \DeclareMathOperator{\supp}{supp}
+    \DeclareMathOperator{\diam}{diam}
+    \DeclareMathOperator{\card}{card}
+    \DeclareMathOperator{\II}{II}
+    % categories for the working mathematician
+
+
+    \DeclareMathOperator{\DGRM}{\mathtt{DGRM}} % category of diagrams over a trisp
+    \DeclareMathOperator{\FORD}{\mathtt{ORD_{<∞}}} % category of finite ordinal numbers
+    \DeclareMathOperator{\MOD}{\mathtt{MOD}} % category of modules
+    \DeclareMathOperator{\ORD}{\mathtt{ORD}} % category of ordinal numbers
+    \DeclareMathOperator{\SET}{\mathtt{SET}}
+    \DeclareMathOperator{\TOP}{\mathtt{TOP}}
+
+    \DeclareMathOperator{\hocolim}{hocolim}
+    \DeclareMathOperator{\colim}{colim}
+
+    \DeclareMathOperator{\dom}{dom}
+    \DeclareMathOperator{\Der}{Der}
+%end DeclareMathOperator

@@ -1,0 +1,68 @@
+%\begin{preamble} (The Preamble)
+\input{00-layout.tex}
+% compile with lualatex
+
+\input{00-usepackage.tex}
+\usepackage{imakeidx}
+    \makeindex
+    \makeindex[name=symbol,title=Symbols,columns=3]
+\usepackage{glossaries}
+\makeglossaries
+\usepackage{nomencl}
+\makenomenclature
+\usepackage{lipsum}
+\usepackage{placeins}
+\input{00-newcommand.tex}
+
+\input{00-newunicodechar.tex}
+\input{00-DeclareMathOperator.tex}
+
+% new commands for this specific project
+%\newcommand{\A}{\mathcal{A}}
+\newcommand{\M}{\mathbb{M}}
+\newcommand{\K}[2][]{\sideset{#2}{#1}K}
+\newcommand{\nerve}{\mathcal {N}}
+\nomenclature[Mk2]{$\Mⁿ_κ$}{model space with const.\ sectional curvature $κ$ and dimension $n$; also denoted space form}
+
+%\end{preamble}
+\title{}
+\author{}
+\date{}
+\begin{document}
+
+% (in)famous first page for the University of Vienna
+\input{21-titlepage.tex}
+\maketitle
+
+\begin{spacing}{1}
+\tableofcontents
+\end{spacing}
+
+    \chapter{chapter name}
+    \label{cha:chapter_name}
+    \section{section name}
+    \label{sec:section_name}
+    \subsection{subsection name}
+    \label{sub:subsection_name}
+    
+    
+    
+    % subsection subsection_name (end)
+
+   
+   
+   
+   % section section_name (end) 
+    
+    
+    % chapter chapter_name (end)
+
+\printglossaries
+\printnomenclature
+\newpage
+\bibliographystyle{alpha}
+\bibliography{90-diplomarbeit}
+\newpage
+\printindex[symbol]
+\printindex
+\end{document}
